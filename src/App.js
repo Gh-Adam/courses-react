@@ -6,8 +6,24 @@ import CoursesList from "./components/courses-list/courses-list";
 
 class App extends Component {
   state = {
-    courses: [{ name: "HTML" }, { name: "CSS" }, { name: "JQuery" }]
+    courses: [{ name: "HTML" }, { name: "CSS" }, { name: "JQuery" }],
+    current: ""
   };
+
+  handleEditForm = e => {
+    console.log("edit", e.target.value);
+    this.setState({ current: e.target.value });
+  };
+
+  handleSubmit = e => {
+    console.log("Form Submitted");
+    const { courses, current } = this.state;
+    courses.push({ name: current });
+    console.log("courses", courses);
+    this.setState({ courses, current: "" });
+    e.preventDefault();
+  };
+
   render() {
     const { courses } = this.state;
     const coursesList = courses.map((course, index) => {
@@ -21,7 +37,11 @@ class App extends Component {
     return (
       <section className="App">
         <h2>Manage Your Courses</h2>
-        <CourseForm />
+        <CourseForm
+          editCourse={this.handleEditForm}
+          submitCourse={this.handleSubmit}
+          courseName={this.state.current}
+        />
         <ul>{coursesList}</ul>
 
         {/* <header className="App-header">
