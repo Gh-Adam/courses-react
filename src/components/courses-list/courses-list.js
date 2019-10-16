@@ -8,7 +8,7 @@ class CoursesList extends Component {
   renderCourse = () => {
     return (
       <li>
-        {this.props.course.name}
+        <span className="course">{this.props.course.name}</span>
         <button
           className="btn-gray"
           onClick={() => {

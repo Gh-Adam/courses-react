@@ -36,6 +36,11 @@ input {
   margin-left: 1%;
 }
 
+.course {
+  width: 36%;
+  margin-left: 1%;
+  display: inline-block;
+}
 button {
   width: 24%;
   margin-left: 1%;

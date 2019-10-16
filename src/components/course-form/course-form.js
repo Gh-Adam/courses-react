@@ -1,7 +1,5 @@
 import React from 'react'
 
-// TODO: Can't add an empty course
-// TODO: Can't add Exist Course Again
 const courseForm = props => {
   return (
     <form onSubmit={props.submitCourse}>
