@@ -1,5 +1,7 @@
-import React from "react";
+import React from 'react'
 
+// TODO: Can't add an empty course
+// TODO: Can't add Exist Course Again
 const courseForm = props => {
   return (
     <form onSubmit={props.submitCourse}>
@@ -9,9 +11,11 @@ const courseForm = props => {
         onChange={props.editCourse}
         value={props.courseName}
       />
-      <button type="submit">Submit Course</button>
+      <button className="btn-green" type="submit">
+        Submit Course
+      </button>
     </form>
-  );
-};
+  )
+}
 
-export default courseForm;
+export default courseForm

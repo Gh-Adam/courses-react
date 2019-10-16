@@ -1,22 +1,68 @@
-.App {
+.app {
   text-align: center;
+  margin: 5% auto;
+  width: 50%;
+  padding: 3% 7%;
+  background: -moz-linear-gradient(90deg, #feac75 11%, #f4f60c 100%); /* FF3.6+ */
+  /* background: -webkit-gradient(
+    linear,
+    90deg,
+    color-stop(11%, FEAC75),
+    color-stop(100%, F4F60C)
+  ); Chrome,Safari4+ */
+  /* background: -webkit-linear-gradient(90deg, #feac75 11%, #f4f60c 100%); Chrome10+,Safari5.1+ */
+  /* background: -o-linear-gradient(90deg, #feac75 11%, #f4f60c 100%); Opera 11.10+ */
+  /* background: -ms-linear-gradient(90deg, #feac75 11%, #f4f60c 100%); IE10+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); for IE */
+  /* background: linear-gradient(90deg, #feac75 11%, #f4f60c 100%); W3C */
+  border-radius: 20px;
+  background: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
+.app .title {
+  color: #7c4486;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 1% 0;
+}
+
+input {
+  width: 50%;
+  margin-left: 1%;
+}
+
+button {
+  width: 24%;
+  margin-left: 1%;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
   color: white;
+  padding: 1%;
+  font-weight: 600;
+}
+.btn-gray {
+  background: #5555;
+  border-color: #5555;
 }
 
-.App-link {
-  color: #09d3ac;
+.btn-green {
+  background: green;
+  border-color: green;
 }
+
+.btn-red {
+  background: red;
+  border-color: red;
+}
+/* 
+.ml-1 {
+  margin-left: 1%;
+} */
