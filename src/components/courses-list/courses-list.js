@@ -52,7 +52,9 @@ class CoursesList extends Component {
             this.input = val
           }}
         />
-        <button type="submit">Update Now</button>
+        <button type="submit" className="btn-green">
+          Update Now
+        </button>
       </form>
     )
   }

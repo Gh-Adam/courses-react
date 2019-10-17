@@ -23,15 +23,22 @@
   color: #7c4486;
 }
 
+input {
+  width: 61%;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #7c4486 ;
+}
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul li {
   padding: 1% 0;
 }
 
-input {
+li input {
   width: 50%;
   margin-left: 1%;
 }
@@ -40,7 +47,9 @@ input {
   width: 36%;
   margin-left: 1%;
   display: inline-block;
+  text-align: left;
 }
+
 button {
   width: 24%;
   margin-left: 1%;
@@ -67,7 +76,3 @@ button {
   background: red;
   border-color: red;
 }
-/* 
-.ml-1 {
-  margin-left: 1%;
-} */

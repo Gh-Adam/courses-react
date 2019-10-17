@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-// import logo from "./logo.svg";
 import './App.css'
 import CourseForm from './components/course-form/course-form'
 import CoursesList from './components/courses-list/courses-list'
 
+// TODO: Clean Code
+// TODO: Make Unit test
 class App extends Component {
   state = {
     courses: [{ name: 'HTML' }, { name: 'CSS' }, { name: 'JQuery' }],
@@ -11,12 +12,10 @@ class App extends Component {
   }
 
   handleEditForm = e => {
-    console.log('edit', e.target.value)
     this.setState({ current: e.target.value })
   }
 
   handleSubmit = e => {
-    console.log('Form Submitted')
     e.preventDefault()
     const { courses, current } = this.state
     const exist = courses.find(c => c.name.toLowerCase() === current.toLowerCase())
@@ -32,8 +31,6 @@ class App extends Component {
   }
 
   deleteCourse = index => {
-    console.log('delete index', index)
-    // debugger
     const { courses } = this.state
     courses.splice(index, 1)
     this.setState({ courses })
@@ -49,9 +46,6 @@ class App extends Component {
     const { courses } = this.state
     const coursesList = courses.map((course, index) => {
       return (
-        // <div>
-        //   {index} - {course.name}
-        // </div>
         <CoursesList
           course={course}
           key={index}
